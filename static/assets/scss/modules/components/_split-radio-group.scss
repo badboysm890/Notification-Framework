@@ -1,0 +1,54 @@
+// Split (radio) button
+.split-radio-group {
+    // &:before {
+    //     content: "Complication";
+    //     font-size: 1rem;
+    //     display: inline-block;
+    //     color: #4C5A74;
+    //     position: absolute;
+    //     top: -30px; 
+    // }
+
+    // position: relative;
+    // margin-top: 2rem;
+
+    margin-bottom: 1.5rem;
+    
+    .list-group-item{
+        padding: 0;
+        border-color: #4C5A74;
+        width: 100%;
+        max-width: 200px;
+
+        &:first-of-type, &:first-of-type label{
+            @include border-radius(1rem 0 0 1rem);
+        }
+        &:last-of-type, &:last-of-type label{
+            @include border-radius(0 1rem 1rem 0);
+        }
+    }
+    label {
+        color: #95A4C2;
+        margin: 0;
+        padding: 0.25rem 2rem;
+        font-size: $font-size-xs;
+        border: 1px solid $white;
+        display: block;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    input {
+        display: none;
+
+        &:hover~label {
+            color: $black;
+        }
+
+        &:checked~label {
+            color: $white;
+            background-color: #132241;
+            border-color: #4C5A74;
+        }
+    }
+}

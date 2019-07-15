@@ -1,0 +1,105 @@
+// file specific variables
+$defaultWidth: 13rem;
+$collapsedWidth: 5rem;
+
+// Mobile-first rules
+.sidebar-container {
+    position: relative;
+    .sidebar-sticky {
+        position: absolute;
+        top: 61px;
+        left: 0;
+        width: $defaultWidth;
+        min-width: 44px;
+        background-color: $white;
+        white-space: nowrap;
+        transition-duration: 0.5s;
+        overflow: hidden;
+        z-index: 1;
+
+        &.collapse {
+            display: none;
+            &.show{
+                display: block;
+            }
+        }
+
+        .navbar-brand {
+            display: none;
+        }
+
+        .nav-item {
+            border: 4px solid $white;
+
+            &.active {
+                border-left-color: #20fc8f;
+
+                span,
+                i {
+                    color: #132241;
+                }
+            }
+
+            &:last-of-type {
+                margin-bottom: 5rem;
+            }
+        }
+
+        .nav-link {
+            padding: 0.5rem 1rem 0.5rem 1.5rem;
+            color: #95a4c2;
+
+            .material-icons {
+                vertical-align: middle;
+                font-size: 1.25rem;
+            }
+
+            span {
+                padding-left: 1.5rem;
+            }
+        }
+    }
+}
+
+// Larger than mobile devices (md: 768px)
+@include media-breakpoint-up(md) {
+    .sidebar-container .sidebar-sticky {
+        top: 0;
+
+        &.collapse,
+        &.collapse:not(.show) {
+            display: block;
+        }
+
+        &.sidebar-collapse {
+            width: $collapsedWidth;
+
+            .navbar-brand {
+                background: transparent url('../../assets/images/guvi-logo-icon.png') no-repeat 14px 6px;
+                width: $collapsedWidth - 1rem;
+            }
+
+            .nav-link {
+                span {
+                    position: absolute;
+                    transform: translateX(-200%);
+                    opacity: 0;
+                    transition-duration: 0.5s;
+                }
+            }
+        }
+
+
+        .navbar-brand {
+            display: block;
+            width: $defaultWidth - 1rem;
+            height: 58px;
+            text-indent: -9999px;
+            background: transparent url('../../assets/images/guvi-logo.png') no-repeat 14px 6px;
+            border-bottom: 1px solid #EEF1F8;
+            padding: 0;
+            margin: 0.2rem 0.5rem 0 0.5rem;
+            box-sizing: border-box;
+        }
+    }
+}

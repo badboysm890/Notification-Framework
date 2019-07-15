@@ -1,0 +1,48 @@
+.icon-gem {
+    @extend %custom-icon;
+    background-position: -21px -20px;
+}
+
+.icon-level {
+    @extend %custom-icon;
+    background-position: -21px -115px;
+}
+
+.icon-code-kata {
+    @extend %custom-icon;
+    background-position: -121px -219px;
+}
+
+.icon-micro-arc {
+    @extend %custom-icon;
+    background-position: -122px -314px;
+}
+
+.icon-project-board {
+    @extend %custom-icon;
+    background-position: -122px -408px;
+}
+
+.icon-leader-board {
+    @extend %custom-icon;
+    background-position: -122px -504px;
+}
+
+.icon-reward {
+    @extend %custom-icon;
+    background-position: -122px -599px;
+}
+
+.icon-milestone {
+    @extend %custom-icon;
+    background-position: -26px -684px;
+}
+
+.active {
+    .icon-code-kata, .icon-reward {
+        background-position-x: -26px;
+    }
+    .icon-micro-arc, .icon-project-board, .icon-leader-board {
+        background-position-x: -27px;
+    }
+}

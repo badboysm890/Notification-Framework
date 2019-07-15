@@ -1,0 +1,30 @@
+// Gravatar
+$gravatar-size: 36px;
+.gravatar-wrap {
+    position: relative;
+    width: $gravatar-size;
+    height: $gravatar-size;
+    border: 2px solid #f1e8f9;
+    @include border-radius(50%);
+
+    &:before {
+        content: "\f007";
+        font-size: 1.4rem;
+        font-family: 'Font Awesome 5 Free';
+        color: #95A4C2;
+        display: flex;
+        justify-content: center;
+        flex-flow: column;
+        height: 100%;
+        text-align: center;
+    }
+
+    .gravatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: $gravatar-size - 4;
+        height: $gravatar-size - 4;
+        @include border-radius(50%);
+    }
+}

@@ -1,0 +1,31 @@
+/**
+
+    Guvi Bootstrap Sass Theme
+    Version: 0.0.1
+
+***/
+
+/* BASE - Base styles, variables, mixins etc */
+
+@import 'base/_variables.scss';
+@import 'base/_mixins.scss';
+@import 'base/_placeholders.scss';
+@import 'base/_base.scss';
+@import 'base/_utilities.scss';
+
+/* MODULES - Individual site components */
+@import 'modules/_typography.scss';
+@import 'modules/_blocks.scss';
+@import 'modules/_buttons.scss';
+@import 'modules/_sections.scss';
+@import 'modules/_components.scss';
+@import 'modules/_iconsprites.scss';
+
+/* LAYOUTS - Page layout styles */
+@import 'layouts/_nav.scss';
+@import 'layouts/_header.scss';
+@import 'layouts/_body.scss';
+@import 'layouts/_footer.scss';
+
+/* PAGES - Page specific styles */
+@import 'pages/_courses.scss';

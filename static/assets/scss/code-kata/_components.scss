@@ -1,0 +1,10 @@
+
+.codeEditor {
+    min-height: 300px;
+    transition: min-height 0.15s ease-out;
+
+    &.expand {
+        min-height: 600px;
+        transition: min-height 0.25s ease-in;
+    }
+}

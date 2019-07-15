@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GUVI | Learn to code in your native language</title>
+    <!-- Vendor CSS -->
+    <link href="../assets/vendors/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/vendors/css/all.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+</head>
+
+<body>
+
+    <main role="main" class="container-fluid">
+
+        <!-- Header  -->
+        <header class="row bg-white">
+
+            <!-- Sidebar -->
+            <div class="sidebar-container">
+                <div id="sidebar" class="sidebar-sticky sidebar-collapse collapse in shadow-sm">
+                    <a class="navbar-brand" href="#">GUVI</a>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="material-icons">home</i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="course.html">
+                                <i class="material-icons">video_library</i>
+                                <span>Course</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="code-kata.html">
+                                <i class="icon-code-kata"></i>
+                                <span>Code_Kata</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="micro-arc.html">
+                                <i class="icon-micro-arc"></i>
+                                <span>Micro Arc</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="project-board.html">
+                                <i class="icon-project-board"></i>
+                                <span>Project Board</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leader-board.html">
+                                <i class="icon-leader-board"></i>
+                                <span>Leaderboard</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="rewards.html">
+                                <i class="icon-reward"></i>
+                                <span>Rewards</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="bookmark.html">
+                                <i class="material-icons">bookmarks</i>
+                                <span>Bookmark</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="job.html">
+                                <i class="material-icons">work</i>
+                                <span>Job</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /Sidebar -->
+
+            <nav class="col navbar navbar-expand-md navbar-light">
+
+                <button id="sidebarToggle" class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#sidebar" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="material-icons">menu</i>
+                </button>
+
+                <a class="navbar-brand visible-md" href="#">
+                    <img src="../assets/images/guvi-logo.png" alt="GUVI : Learn to code in your native language" />
+                </a>
+
+                <!-- AccountGroup -->
+                <div class="list-group list-group-horizontal-md user-profile" id="accountGroup">
+                    <button class="btn dropdown notification-box-toggler" data-toggle="collapse"
+                        data-target="#notification-box">
+                        <i class="material-icons">notifications</i>
+                    </button>
+
+                    <button class="btn dropdown account-box-toggler" type="button" data-toggle="collapse"
+                        data-target="#account-box" aria-expanded="false" aria-controls="account-box">
+                        <div class="gravatar-wrap">
+                            <img src="../assets/images/profile-pic-sample.jpeg" class="gravatar" alt="username">
+                        </div>
+                    </button>
+
+                    <div class="accordion-group">
+
+                        <!-- NotificationBox -->
+                        <div class="collapse notification-box" id="notification-box" data-parent="#accountGroup">
+                            <div class="card card-body">
+                                <ul class="list-group">
+                                    <li class="list-group-item border-0 p-1">
+                                        <div class="d-flex flex-row border-bottom mb-2">
+                                            <div class="gravatar-wrap mr-2">
+                                                <img src="../assets/images/profile-pic-sample.jpeg" class="gravatar"
+                                                    alt="username">
+                                            </div>
+                                            <div class="account-info">
+                                                <p class="mb-0"><strong>David Lee</strong> sent you a message.</p>
+                                                <p class="text-muted timestamp">4 min ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 p-1">
+                                        <div class="d-flex flex-row border-bottom mb-2">
+                                            <div class="gravatar-wrap mr-2">
+
+                                            </div>
+                                            <div class="account-info">
+                                                <p class="mb-0"><strong>Alex Johnson</strong> sent you a message.</p>
+                                                <p class="text-muted timestamp">4 min ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item border-0 p-1">
+                                        <div class="d-flex flex-row border-bottom mb-2">
+                                            <div class="gravatar-wrap mr-2">
+                                                <img src="../assets/images/profile-pic-sample.jpeg" class="gravatar"
+                                                    alt="username">
+                                            </div>
+                                            <div class="account-info">
+                                                <p class="mb-0"><strong>Jonathan Chen</strong> sent you mail.</p>
+                                                <p class="text-muted timestamp">4 min ago</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /NotificationBox -->
+
+                        <!-- AccountBox -->
+                        <div class="collapse account-box" id="account-box" data-parent="#accountGroup">
+                            <div class="card card-body">
+
+                                <!-- UserAccount information -->
+                                <div class="d-flex flex-row border-bottom mb-2">
+                                    <div class="gravatar-wrap mr-2">
+                                        <img src="../assets/images/profile-pic-sample.jpeg" class="gravatar"
+                                            alt="username">
+                                    </div>
+                                    <div class="account-info">
+                                        <p class="mb-0">Mahendra</p>
+                                        <p><a href="mailto:Mahendra@guvi.in">Mahendra@guvi.in</a></p>
+                                    </div>
+                                </div>
+                                <!-- /UserAccount information -->
+
+                                <!-- ScoreCard -->
+                                <div class="d-flex flex-row mb-2  pb-2 score-card" id="mainNavDefault">
+                                    <p class="gem"><i class="icon-gem" aria-hidden="true">Gem:</i><span>500</span>
+                                    </p>
+                                    <p class="experience"><strong>Xp:</strong><span>12343</p>
+                                    <p class="rank"><strong>Rank:</strong><span>1238394</span></p>
+                                    <p class="level"><strong>Level:</strong><i class="icon-level"><span>43</span></i>
+                                    </p>
+                                </div>
+                                <!-- /ScoreCard -->
+
+                                <ul class="list-group list-group-flush account-links-group">
+                                    <li class="list-group-item account-links"><a href="#">View profile</a></li>
+                                    <li class="list-group-item account-links"><a href="#">Sign out</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- /AccountBox -->
+
+                    </div>
+                </div>
+                <!-- /AccountGroup -->
+
+            </nav>
+        </header>
+        <!-- /Header  -->
+
+        <!-- Body container -->
+        <div class="row">
+            <div class="col-sm-12 offset-md-1 col-md-11 bodyContainer">
+
+                <div class="row">
+
+                    <!-- SearchForm -->
+                    <div class="col-sm-12 col-md-6 order-md-1 form-group">
+                        <form>
+                            <div class="search-form">
+                                <label for="searchInput">Search</label>
+                                <input type="text" class="form-control form-rounded" name="searchInput" id="searchInput"
+                                    aria-describedby="helpId" placeholder="What do you want to learn today?">
+                                <button class="btn search-btn"><i class="material-icons">search</i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /SearchForm -->
+
+
+                    <div class="col-sm-12 col-md-6">
+                        <h1>Courses</h1>
+                    </div>
+
+
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <!-- Tab-Links -->
+                        <ul class=" nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="course-library-tab" data-toggle="tab"
+                                    href="#course-library" role="tab" aria-controls="course-library"
+                                    aria-selected="true">Course Library</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="free-courses-tab" data-toggle="tab" href="#free-courses"
+                                    role="tab" aria-controls="free-courses" aria-selected="false">Free Courses</a>
+                            </li>
+                        </ul>
+                        <!-- /Tab-Links -->
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col tab-content" id="myTabContent">
+
+                        <!-- Course Library tab content -->
+                        <div class="tab-pane fade show active" id="course-library" role="tabpanel"
+                            aria-labelledby="course-library-tab">
+
+
+                            <!-- Topic lists -->
+                            <ul class="list-group-horizontal list-group-flush topics-list row">
+                                <li class="list-group-item col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Full Stack Developer</a>
+                                </li>
+                                <li class="list-group-item col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">DataBased</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Programming</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Back End Developer</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Mobile Application</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Web Develpment</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Machine Learning</a>
+                                </li>
+                                <li class="list-group-item hidden-xs extra-topics col-sm-6 col-md-4 col-lg-3">
+                                    <a href="#">Front End Developer</a>
+                                </li>
+                            </ul>
+                            <!-- /Topic lists -->
+
+                            <div class="visible-xs view-more">
+                                <button id="topics-view-more-button" class="btn" data-toggle="collapse"
+                                    data-target=".extra-topics" aria-expanded="false">View More</button>
+                            </div>
+
+
+                            <div class="row course-list">
+
+                                <!-- Course Card 1 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Foundation Course 101</h5>
+                                            <p class="card-text">
+                                                <span class="course-duration">40 hrs</span>
+                                                <span class="proficiency">Beginner</span>
+                                            </p>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="course1-star5" name="course1-rating"
+                                                        value="5" />
+                                                    <label for="course1-star5" title="5 star"></label>
+                                                    <input type="radio" id="course1-star4" name="course1-rating"
+                                                        value="4" checked="checked" />
+                                                    <label for="course1-star4" title="4 star">4</label>
+                                                    <input type="radio" id="course1-star3" name="course1-rating"
+                                                        value="3" />
+                                                    <label for="course1-star3" title="3 star">3</label>
+                                                    <input type="radio" id="course1-star2" name="course1-rating"
+                                                        value="2" />
+                                                    <label for="course1-star2" title="2 star">2</label>
+                                                    <input type="radio" id="course1-star1" name="course1-rating"
+                                                        value="1" />
+                                                    <label for="course1-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+                                            <p class="price">Rs - 1800 /-</p>
+
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="btn pl-0 more-details">More details</a>
+                                                <a href="#" class="btn btn-guvi-primary">Enroll</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 1 -->
+
+                                <!-- Course Card 2 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">UX / UI Masterclass</h5>
+                                            <p class="card-text">
+                                                <span class="course-duration">40 hrs</span>
+                                                <span class="proficiency">Beginner</span>
+                                            </p>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="course2-star5" name="course2-rating"
+                                                        value="5" />
+                                                    <label for="course2-star5" title="5 star"></label>
+                                                    <input type="radio" id="course2-star4" name="course2-rating"
+                                                        value="4" checked="checked" />
+                                                    <label for="course2-star4" title="4 star">4</label>
+                                                    <input type="radio" id="course2-star3" name="course2-rating"
+                                                        value="3" />
+                                                    <label for="course2-star3" title="3 star">3</label>
+                                                    <input type="radio" id="course2-star2" name="course2-rating"
+                                                        value="2" />
+                                                    <label for="course2-star2" title="2 star">2</label>
+                                                    <input type="radio" id="course2-star1" name="course2-rating"
+                                                        value="1" />
+                                                    <label for="course2-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+                                            <p class="price">Rs - 1800 /-</p>
+
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="btn pl-0 more-details">More details</a>
+                                                <a href="#" class="btn btn-guvi-primary">Enroll</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 2 -->
+
+                                <!-- Course Card 3 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Machine Learning & AI Foundation</h5>
+                                            <p class="card-text">
+                                                <span class="course-duration">40 hrs</span>
+                                                <span class="proficiency">Beginner</span>
+                                            </p>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="course3-star5" name="course3-rating"
+                                                        value="5" />
+                                                    <label for="course3-star5" title="5 star"></label>
+                                                    <input type="radio" id="course3-star4" name="course3-rating"
+                                                        value="4" checked="checked" />
+                                                    <label for="course3-star4" title="4 star">4</label>
+                                                    <input type="radio" id="course3-star3" name="course3-rating"
+                                                        value="3" />
+                                                    <label for="course3-star3" title="3 star">3</label>
+                                                    <input type="radio" id="course3-star2" name="course3-rating"
+                                                        value="2" />
+                                                    <label for="course3-star2" title="2 star">2</label>
+                                                    <input type="radio" id="course3-star1" name="course3-rating"
+                                                        value="1" />
+                                                    <label for="course3-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+                                            <p class="price">Rs - 1800 /-</p>
+
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="btn pl-0 more-details">More details</a>
+                                                <a href="#" class="btn btn-guvi-primary">Enroll</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 3 -->
+
+                            </div>
+
+                        </div>
+                        <!-- /Course Library tab content -->
+
+
+                        <!-- Free courses tab content -->
+                        <div class="tab-pane fade" id="free-courses" role="tabpanel" aria-labelledby="free-courses-tab">
+
+                            <div class="row course-list">
+
+                                <!-- Free Course Card 1 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Python Foundation Course 101</h5>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="free-course1-star5"
+                                                        name="free-course1-rating" value="5" />
+                                                    <label for="free-course1-star5" title="5 star"></label>
+                                                    <input type="radio" id="free-course1-star4"
+                                                        name="free-course1-rating" value="4" checked="checked" />
+                                                    <label for="free-course1-star4" title="4 star">4</label>
+                                                    <input type="radio" id="free-course1-star3"
+                                                        name="free-course1-rating" value="3" />
+                                                    <label for="free-course1-star3" title="3 star">3</label>
+                                                    <input type="radio" id="free-course1-star2"
+                                                        name="free-course1-rating" value="2" />
+                                                    <label for="free-course1-star2" title="2 star">2</label>
+                                                    <input type="radio" id="free-course1-star1"
+                                                        name="free-course1-rating" value="1" />
+                                                    <label for="free-course1-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <a href="#" class="btn btn-guvi-primary">Start Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 1 -->
+
+                                <!-- Course Card 2 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">UX / UI Masterclass</h5>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="free-course2-star5"
+                                                        name="free-course2-rating" value="5" />
+                                                    <label for="free-course2-star5" title="5 star"></label>
+                                                    <input type="radio" id="free-course2-star4"
+                                                        name="free-course2-rating" value="4" checked="checked" />
+                                                    <label for="free-course2-star4" title="4 star">4</label>
+                                                    <input type="radio" id="free-course2-star3"
+                                                        name="free-course2-rating" value="3" />
+                                                    <label for="free-course2-star3" title="3 star">3</label>
+                                                    <input type="radio" id="free-course2-star2"
+                                                        name="free-course2-rating" value="2" />
+                                                    <label for="free-course2-star2" title="2 star">2</label>
+                                                    <input type="radio" id="free-course2-star1"
+                                                        name="free-course2-rating" value="1" />
+                                                    <label for="free-course2-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <a href="#" class="btn btn-guvi-primary">Start Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 2 -->
+
+                                <!-- Course Card 3 -->
+                                <div class="col-md-12 col-lg-6 col-xl-4">
+                                    <div class="card course-card">
+                                        <div class="card-header d-flex flex-row">
+                                            <div class=" course-banner mr-2">
+                                                <img src="https://dummyimage.com/179x101/ccc/000.png" alt="username">
+                                            </div>
+                                            <div class="author-info">
+                                                <p><a href="#">by Google</a></p>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <h5 class="card-title">Machine Learning & AI Foundation</h5>
+
+                                            <div class="course-rating d-flex flex-row">
+                                                <strong class="average-rating">4.6</strong>
+                                                <div class="starrating d-flex justify-content-center flex-row-reverse">
+                                                    <input type="radio" id="free-course3-star5"
+                                                        name="free-course3-rating" value="5" />
+                                                    <label for="free-course3-star5" title="5 star"></label>
+                                                    <input type="radio" id="free-course3-star4"
+                                                        name="free-course3-rating" value="4" checked="checked" />
+                                                    <label for="free-course3-star4" title="4 star">4</label>
+                                                    <input type="radio" id="free-course3-star3"
+                                                        name="free-course3-rating" value="3" />
+                                                    <label for="free-course3-star3" title="3 star">3</label>
+                                                    <input type="radio" id="free-course3-star2"
+                                                        name="free-course3-rating" value="2" />
+                                                    <label for="free-course3-star2" title="2 star">2</label>
+                                                    <input type="radio" id="free-course3-star1"
+                                                        name="free-course3-rating" value="1" />
+                                                    <label for="free-course3-star1" title="1 star">1</label>
+                                                </div>
+                                                <span class="rating-count">(23425)</span>
+                                            </div>
+
+                                            <div class="d-flex justify-content-end">
+                                                <a href="#" class="btn btn-guvi-primary">Start Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /Course Card 3 -->
+
+                            </div>
+
+
+                        </div>
+                        <!-- /Free courses tab content -->
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- /Body container -->
+
+    </main>
+
+
+    <script src="../assets/vendors/js/jquery.js"></script>
+    <script src="../assets/vendors/js/popper.js"></script>
+    <script src="../assets/vendors/js/bootstrap.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+
+</html>

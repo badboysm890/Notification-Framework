@@ -1,0 +1,100 @@
+// Course Topics
+.topics-list {
+    padding-left: 0;
+
+    .list-group-item {
+        border: 0;
+        background-color: transparent;
+        padding-left: 0.85rem;
+        padding-right: 0.75rem;
+        width: 100%;
+
+        &.extra-topics.in,
+        &.extra-topics.collapsing,
+        &.extra-topics.collapse.show {
+            display: block!important;
+        }
+
+        a {
+            display: block;
+            margin: 0.1rem;
+            padding: 1rem 4rem 1rem 1rem;
+            background-color: #181818;
+            color: #EEF1F8;
+            white-space: nowrap;
+        }
+    }
+}
+
+// View more button (Topic List - in mobile view)
+.view-more {
+    border-bottom: 1px solid #C7D4EE;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 2rem;
+
+    .btn {
+        border: 1px solid #C7D4EE;
+        margin-bottom: 1rem;
+        min-width: 150px;
+        font-size: 0;
+
+        &:after {
+            font-size: 1rem;  
+            content: "View More";
+        }
+        
+        &[aria-expanded="true"] {
+            &:after {
+                font-size: 1rem;
+                content: "View Less";    
+            }
+        }
+    }
+}
+
+// course cards
+.course-card.card {
+    .card-header {
+        .author-info p {
+            display: flex;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                display: inline-flex;
+            }
+        }
+    }
+
+    .card-body {
+        .card-text {
+            .course-duration {
+                border-right: 1px solid #95A4C2;
+                padding-right: 0.5rem;
+                margin-right: 0.5rem;
+                display: inline-block;
+            }
+        }
+
+        .course-rating {
+            .average-rating {
+                padding-right: 1rem;
+                font-size: $font-size-lg;
+            }
+
+            .rating-count {
+                font-size: $font-size-xs;
+                padding: 0.3rem 0 0 0.5rem;
+                font-weight: 400;
+                color: #312C35;
+            }
+        }
+
+        .price {
+            text-align: right;
+            color: #4C5A74;
+        }
+    }
+}

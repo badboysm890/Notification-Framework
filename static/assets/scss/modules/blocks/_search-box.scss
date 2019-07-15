@@ -1,0 +1,27 @@
+// search input 
+.search-form {
+    position: relative;
+
+    label {
+        display: none;
+    }
+
+    input {
+        margin-left: auto;
+        padding-right: 3rem;
+
+        @include media-breakpoint-up(md) {
+            max-width: 400px;
+        }
+    }
+
+    .form-rounded {
+        @include border-radius(18px);
+    }
+
+    .search-btn {
+        position: absolute;
+        right: 3px;
+        top: 0;
+    }
+}

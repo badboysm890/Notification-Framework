@@ -1,0 +1,28 @@
+// Star rating
+.starrating {
+    label {
+        color: transparent;
+        font-size: 0;
+
+        &:before {
+            content: "\f005";
+            margin: 2px;
+            font-size: 1rem;
+            font-family: 'Font Awesome 5 Free';
+            font-weight: 900; // [regular, brand - 400 || solid - 900 || 300 - light ]
+            color: #222222;
+        }
+    }
+
+    input {
+        display: none;
+
+        &:hover~label:before {
+            color: #ffca08;
+        }
+
+        &:checked~label:before {
+            color: #ffca08;
+        }
+    }
+}

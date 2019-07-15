@@ -1,0 +1,61 @@
+.milestone {
+    margin-top: 1rem;
+
+    .card-header {
+        background-color: #673bf3;
+        @include gradient-x($start-color: #673bf3, $end-color: #d90fef, $start-percent: 20%, $end-percent: 80%);
+        color: $white;
+
+        .milestone-header {
+            position: relative;
+            padding-left: 2.5rem;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -0.4rem;
+                left: 0;
+                width: 32px;
+                height: 32px;
+                @extend %custom-icon;
+                background-color: #673bf3;
+                background-position: -26px -684px;
+            }
+        }
+    }
+
+    .total-gems i,
+    .stepper .gems i {
+        background-size: 440%;
+        width: 20px;
+        height: 20px;
+        background-position: -11px -11px;
+        margin-left: 0.5rem;
+    }
+
+    .stepper li {
+        font-size: $font-size-sm;
+        color:  #000;
+        font-weight: 700;
+        display: none;
+
+        &:first-of-type {
+            display: flex;
+            &:after {
+                display: none;
+            }
+        }
+    }
+}
+
+
+// Larger than mobile devices (md: 768px)
+@include media-breakpoint-up(md) {
+    .milestone .stepper li {
+        display: flex;
+
+        &:first-of-type:after {
+            display: block;
+        }
+    }
+}

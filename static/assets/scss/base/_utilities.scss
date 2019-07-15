@@ -1,0 +1,27 @@
+// misc
+.visible-xs {
+    @include media-breakpoint-down(xs) {
+        display: block;
+    }
+    @include media-breakpoint-up(xs) {
+        display: none;
+    }
+}
+
+.hidden-xs, .hidden-xs.collapse:not(.show) {
+    @include media-breakpoint-down(xs) {
+        display: none;
+    }
+    @include media-breakpoint-up(xs) {
+        display: block;
+    }
+}
+
+.visible-md {
+    @include media-breakpoint-down(md) {
+        display: block;
+    }
+    @include media-breakpoint-up(md) {
+        display: none;
+    }
+}

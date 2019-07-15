@@ -1,0 +1,15 @@
+body{
+    background-color: #f6f6f9;
+    font-family: $font-family-base;
+    min-width: 360px;
+}
+
+/***[ all custom z-index marked here ]***/
+
+.sidebar-sticky, 
+.notification-box, 
+.account-box { 
+  z-index: 1
+}
+
+/*****[ End z-index ]********************/

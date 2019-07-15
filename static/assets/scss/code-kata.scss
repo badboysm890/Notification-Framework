@@ -1,0 +1,7 @@
+/* COMMON rules */
+@import 'main.scss';
+
+/* code-kata specific */
+@import 'code-kata/_variables.scss';
+@import 'code-kata/_layout.scss';
+@import 'code-kata/_components.scss';

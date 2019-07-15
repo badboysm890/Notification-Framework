@@ -1,0 +1,115 @@
+.container{
+    min-width: 1200px;
+}
+.code-kata-body {
+    padding: 0 15px;
+    color: white;
+}
+
+.code-kata-innerwrap {
+    background-color: #1E1F24;
+
+    .side-tabs {
+        background-color: #353535;
+
+        .list-group-item {
+            background-color: transparent;
+            border-color: #4A494A;
+            border-width: 1px 0 0;
+
+            &:first-child {
+                padding: 0;
+            }
+
+            &.list-group-item-action {
+                color: #D6D4D9;
+                font-size: $font-size-sm;
+
+                text-align: center;
+                
+                span{
+                    display: block;
+                    padding-top: 10px;
+                    font-size: $font-size-xs;
+                }
+            }
+
+            .card {
+                background-color: transparent;
+                border: none;
+
+                .card-header {
+                    border: none;
+                    text-transform: uppercase;
+
+                    i {
+                        margin-right: 0.5rem;
+                    }
+                }
+
+                .card-title {
+                    color: #F8F7FD;
+                    text-align: center;
+                    font-size: $font-size-xs;
+                }
+
+                .card-body {
+                    text-align: center;
+
+                    .profile-pic {
+                        background: url('../../images/profile-pic-default.png') no-repeat 0 0;
+                        width: 56px;
+                        height: 56px;
+                        background-size: cover;
+                        margin: 0 auto;
+                        @include border-radius(56px);
+                        border: 3px solid white;
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                            @include border-radius(53px);
+                        }
+                    }
+
+                    .card-text {
+                        padding-top: 1rem;
+
+                        span {
+                            display: block;
+                            font-size: $font-size-xs;
+                            color: $guviGreen;
+                            padding-top: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .side-tab-panes {
+        min-height: 600px;
+        border-right: 1px solid #4D4C4F;
+    }
+
+    .kata-footer {
+        border-top: 1px solid #4D4C4F;
+        border-right: 1px solid #4D4C4F;
+        background-color: #1D1D1D;
+
+        .tags{
+            padding: 1rem 0;
+
+            i.fa {
+                margin: 0 1rem;
+                color: #898A94;
+            }
+
+            .badge-secondary{
+                font-weight: 400;
+                background-color: #322B36;
+                color: #898A94;
+            }
+        }
+    }
+}

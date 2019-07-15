@@ -1,0 +1,51 @@
+
+.stepper {
+    margin-bottom: 0;
+
+    li {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0 0 1.5rem 2.5rem;
+        // padding: 1.5rem 0 0 2.5rem;
+        color:  #000;
+
+        &:before {
+            content: "\f058";
+            font-size: 1.3rem;
+            font-family: 'Font Awesome 5 Free';
+            color: #c7d4ee;
+            position: absolute;
+            top: -0.3rem;
+            left: 0;
+        }
+
+        &:after {
+            content: "";
+            background-color: #c7d4ee;
+            position: absolute;
+            top: 1.4rem;
+            // bottom: 5.8rem;
+            left: 0.5rem;
+            width: 1px;
+            height: 45%;
+        }
+
+        &.completed {
+            color: #4C5A74;
+
+            &:before {
+                color: #20fc8f;
+            }
+        }
+
+        &:last-of-type {
+            padding-top: 0;
+
+            &:after {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+}
